@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{70BF8F1C-624A-44D8-954A-F489DE522BAD}</ProjectGuid>
+    <RootNamespace>LeetCodeTasks</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AccountsMerge.cpp" />
+    <ClCompile Include="AllNodesDistanceKInBinaryTree.cpp" />
+    <ClCompile Include="BasicCalculatorII.cpp" />
+    <ClCompile Include="BestTimeToBuyAndSellStockII.cpp" />
+    <ClCompile Include="BestTimeToBuyAndSellStockIII.cpp" />
+    <ClCompile Include="BestTimeToBuyAndSellStockIV.cpp" />
+    <ClCompile Include="BinaryTreeInorderTraversal.cpp" />
+    <ClCompile Include="BinaryTreeLevelOrderTraversal.cpp" />
+    <ClCompile Include="BinaryTreePaths.cpp" />
+    <ClCompile Include="BinaryTreePostorderTraversal.cpp" />
+    <ClCompile Include="BinST.cpp" />
+    <ClCompile Include="Candy.cpp" />
+    <ClCompile Include="ClimbingStairs.cpp" />
+    <ClCompile Include="CloneGraph.cpp" />
+    <ClCompile Include="CompoundEye.cpp" />
+    <ClCompile Include="ConstructBinaryTreeFromPreorderAndInorderTraversal.cpp" />
+    <ClCompile Include="CopyListWithRandomPointer.cpp" />
+    <ClCompile Include="CourseSchedule.cpp" />
+    <ClCompile Include="CourseScheduleII.cpp" />
+    <ClCompile Include="CourseScheduleIII.cpp" />
+    <ClCompile Include="DecodeString.cpp" />
+    <ClCompile Include="DecodeWays.cpp" />
+    <ClCompile Include="DistinctSubsequences.cpp" />
+    <ClCompile Include="EditDistance.cpp" />
+    <ClCompile Include="EvaluateDivision.cpp" />
+    <ClCompile Include="FindEventualSafeStates.cpp" />
+    <ClCompile Include="FindFirsAndLastPositionOfElementInSortedArray.cpp" />
+    <ClCompile Include="FlattenAMultilevelDoublyLinkedList.cpp" />
+    <ClCompile Include="GenerateParentheses.cpp" />
+    <ClCompile Include="IndexedPriorityQueueTests.cpp" />
+    <ClCompile Include="InsertInterval.cpp" />
+    <ClCompile Include="InterleavingString.cpp" />
+    <ClCompile Include="IntervalListIntersections.cpp" />
+    <ClCompile Include="IsGraphBipartite.cpp" />
+    <ClCompile Include="LongestHappyPrefix.cpp" />
+    <ClCompile Include="LongestIncreasingSubsequence.cpp" />
+    <ClCompile Include="LongestMountainInArray.cpp" />
+    <ClCompile Include="LongestSubstringWithoutRepeatingCharacters.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MajorityElement.cpp" />
+    <ClCompile Include="MaximumDepthOfBinaryTree.cpp" />
+    <ClCompile Include="MaximumErasureValue.cpp" />
+    <ClCompile Include="MaximumProductSubarray.cpp" />
+    <ClCompile Include="MicrosoftDan.cpp" />
+    <ClCompile Include="MinimizeMalwareSpreadII.cpp" />
+    <ClCompile Include="MinimumDepthOfBinaryTree.cpp" />
+    <ClCompile Include="MinimumHeightTrees.cpp" />
+    <ClCompile Include="MinimumMovesToReachTargetWithRotations.cpp" />
+    <ClCompile Include="MinimumPathSum.cpp" />
+    <ClCompile Include="MinimumSizeSubarraySum.cpp" />
+    <ClCompile Include="NetworkDelayTime.cpp" />
+    <ClCompile Include="NextPermutation.cpp" />
+    <ClCompile Include="PalindromePartitioning.cpp" />
+    <ClCompile Include="PalindromePartitioningII.cpp" />
+    <ClCompile Include="PartitionEqualSubsetSum.cpp" />
+    <ClCompile Include="PartitionToKEqualSumSubsets.cpp" />
+    <ClCompile Include="PermutationSequence.cpp" />
+    <ClCompile Include="PickNik.cpp" />
+    <ClCompile Include="PossibleBipartition.cpp" />
+    <ClCompile Include="ReconstructItinerary.cpp" />
+    <ClCompile Include="RecoverBinarySearchTree.cpp" />
+    <ClCompile Include="RectangleArea.cpp" />
+    <ClCompile Include="RedundantConnection.cpp" />
+    <ClCompile Include="RedundantConnectionII.cpp" />
+    <ClCompile Include="ReverseNodesInKGroup.cpp" />
+    <ClCompile Include="SameTree.cpp" />
+    <ClCompile Include="SearchA2DMatrix.cpp" />
+    <ClCompile Include="SmallestStringStartingFromLeaf.cpp" />
+    <ClCompile Include="Sorts.cpp" />
+    <ClCompile Include="SpiralMatrixII.cpp" />
+    <ClCompile Include="Stryker.cpp" />
+    <ClCompile Include="StrykerDesign.cpp" />
+    <ClCompile Include="SubstringWithConcatenationOfAllWords.cpp" />
+    <ClCompile Include="SurroundedRegions.cpp" />
+    <ClCompile Include="SwapNodesInPairs.cpp" />
+    <ClCompile Include="SymmetricTree.cpp" />
+    <ClCompile Include="PriorityQueueTests.cpp" />
+    <ClCompile Include="UniqueBinarySearchTrees.cpp" />
+    <ClCompile Include="UniqueBinarySearchTreesII.cpp" />
+    <ClCompile Include="UniquePaths.cpp" />
+    <ClCompile Include="UniquePathsIII.cpp" />
+    <ClCompile Include="ValidateBinarySearchTree.cpp" />
+    <ClCompile Include="Zynga.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IndexedPriorityQueue.h" />
+    <ClInclude Include="PriorityQueue.h" />
+    <ClInclude Include="TasksList.h" />
+    <ClInclude Include="TreeNode.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
